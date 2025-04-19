@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <h1> Welcome to My World</h1>
+
+      <!-- PICTURE Element: Responsive images for different screen sizes -->
+  <h2>Responsive Photo of Me</h2>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/images/my_passport-small.jpg">
+    <source media="(max-width: 1024px)" srcset="./assets/images/my_passport-medium.jpg">
+    <source media="(min-width: 1025px)" srcset="./assets/images/my_passport-large.jpg">
+    <img src="./assets/images/my_passport.jpg" alt="Photo of me">
+  </picture>
+
+  <p>This photo changes depending on the screen size you're using.</p>
+  
+
+  <!-- AUDIO Element -->
+  
+  <h2>My Voice</h2>
+  <audio controls>
+    <source src="/assets/audios/werewolf roar.mp3" type="audio/mp3">
+  </audio>
+  <p>This is a short audio message from me.</p>
+
+
+   <!-- VIDEO Element -->
+   <h2>My Video Introduction</h2>
+   <video width="320" height="240" controls>
+     <source src="./assets/videos/7710516-hd_1920_1080_25fps.mp4" type="video/mp4">
+   </video>
+   <p>A quick video showcasing my interests and work!</p>
+
+
+</body>
+</html>
